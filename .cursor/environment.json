@@ -1,0 +1,15 @@
+{
+  "name": "ovhai-blade-bench",
+  "install": "python3 -m pip install --upgrade pip && pip install -e . && (command -v ovhai >/dev/null 2>&1 || curl -fsSL https://cli.gra.ai.cloud.ovh.net/install.sh | bash)",
+  "egressMode": "parent_plus_network_settings",
+  "egressAllowlist": [
+    "api.models.blade.sh",
+    "blade.sh",
+    "oai.endpoints.kepler.ai.cloud.ovh.net",
+    "gra.ai.cloud.ovh.net",
+    "cli.gra.ai.cloud.ovh.net",
+    "huggingface.co",
+    "pypi.org",
+    "files.pythonhosted.org"
+  ]
+}
