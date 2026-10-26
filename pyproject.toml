@@ -1,0 +1,18 @@
+[project]
+name = "ovhai-blade-bench"
+version = "0.1.0"
+description = "Minimal benchmarks for Blade.sh (OVH/Shadow) OpenAI-compatible inference"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.40",
+    "python-dotenv>=1.0",
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+fabric = ["bladekit>=4.18"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["bench*"]
